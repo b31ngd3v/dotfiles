@@ -9,8 +9,8 @@ else
 fi
 
 printf "Changing wallpaper..."
-convert "$wall" "$HOME/.local/share/bg.jpg"
-xwallpaper --zoom "$HOME/.local/share/bg.jpg"
+convert "$wall" "/tmp/bg.jpg"
+xwallpaper --zoom "/tmp/bg.jpg"
 wal -c
-wal -i "$HOME/.local/share/bg.jpg"
+wal -i "/tmp/bg.jpg"
 xdotool key super+F5
