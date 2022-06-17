@@ -1,0 +1,25 @@
+#
+# wm independent hotkeys
+#
+
+# firefox
+super + a
+	firefox
+
+# lockscreen
+super + x
+    betterlockscreen -l dim
+
+# volume control
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+    pamixer -{i,d,t} 10
+
+# brightness control
+XF86MonBrightness{Up,Down}
+	xbacklight -{inc,dec} 5
+
+# screenshot
+Print
+    maim --select | tee ~/pix/ss/$(date +%s).jpg | xclip -sel c -t image/jpg
+super + Print 
+    maim | tee ~/pix/ss/$(date +%s).jpg | xclip -sel c -t image/jpg
