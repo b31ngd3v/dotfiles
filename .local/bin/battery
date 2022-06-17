@@ -1,0 +1,5 @@
+#!/bin/sh
+
+capacity="$(cat "/sys/class/power_supply/BAT0/capacity" 2>&1)"
+printf "%s %d%%" "" "$capacity";
+printf "\\n";

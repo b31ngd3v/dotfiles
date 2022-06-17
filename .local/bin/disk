@@ -1,0 +1,4 @@
+#!/bin/sh
+
+location=${1:-/}
+printf "%s %s\n"  "$(df -h "$location" | awk ' /[0-9]/ {print $2}')"
