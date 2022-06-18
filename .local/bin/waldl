@@ -34,9 +34,12 @@ atleast=1920x1080
 # allow the user to customize the defaults
 [ -e "$HOME/.config/waldlrc" ] && . "$HOME/.config/waldlrc"
 
+# use pywal theme if available
+[ -e "$HOME/.cache/wal/colors.sh" ] && . "$HOME/.cache/wal/colors.sh"
+
 # the menu command used when no query is provided
 sh_menu () {
-	: | dmenu -p "search wallhaven:"
+	: | dmenu -p "search wallhaven:" -fn "JetBrains Mono:size=9" -nf "$foreground" -nb "$background" -sf "$foreground" -sb "$color2"
 	# ROFI: comment the previous line and uncomment the next line for rofi
 	# rofi -dmenu -l 0 -p "search wallpapers"
 }
