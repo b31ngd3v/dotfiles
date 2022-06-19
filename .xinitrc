@@ -7,7 +7,6 @@ xcompmgr &
 sxhkd &
 unclutter &
 dunst &
-tearfree &
 setxkbmap -option caps:swapescape &
 xset r rate 300 50 &
 while type dwm >/dev/null; do dwm && continue || break; done
