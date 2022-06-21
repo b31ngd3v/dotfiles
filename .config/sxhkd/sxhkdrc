@@ -20,6 +20,6 @@ XF86MonBrightness{Up,Down}
 
 # screenshot
 Print
-    maim --select | tee ~/pix/ss/$(date +%s).jpg | xclip -sel c -t image/jpg
+    maim --select | tee ~/pix/ss/$(date +%s).png | xclip -sel c -t image/png
 super + Print 
-    maim | tee ~/pix/ss/$(date +%s).jpg | xclip -sel c -t image/jpg
+    maim | tee ~/pix/ss/$(date +%s).png | xclip -sel c -t image/png
