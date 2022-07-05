@@ -16,6 +16,7 @@ alias \
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE="$HOME/.cache/zsh/history"
+setopt HIST_IGNORE_ALL_DUPS
 
 # Basic auto/tab complete:
 autoload -U compinit
