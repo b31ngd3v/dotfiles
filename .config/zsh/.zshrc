@@ -27,3 +27,5 @@ _comp_options+=(globdots)	# Include hidden files.
 
 # Load syntax highlighting; should be last.
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
+# Fuzzy finder
+source /usr/share/fzf/key-bindings.zsh
