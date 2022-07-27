@@ -18,6 +18,9 @@ SAVEHIST=10000
 HISTFILE="$HOME/.cache/zsh/history"
 setopt HIST_IGNORE_ALL_DUPS
 
+# Vi mode
+bindkey -v
+
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
