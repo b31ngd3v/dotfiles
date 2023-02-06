@@ -10,4 +10,5 @@ dunst &
 setxkbmap -option caps:swapescape &
 xset r rate 300 50 &
 xdotool key Num_Lock &
+/home/b31ngd3v/.local/bin/batterynotify &
 while type dwm >/dev/null; do dwm && continue || break; done
