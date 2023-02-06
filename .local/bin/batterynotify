@@ -1,0 +1,11 @@
+#!/bin/sh
+
+while :
+do
+BATTERY_LEVEL=$(cat "/sys/class/power_supply/BAT0/capacity" 2>&1)
+if [ $((BATTERY_LEVEL)) -lt 20 ]; then
+    notify-send "Low Battery" "${BATTERY_LEVEL}% of battery remaining." -u critical -r 9991
+fi
+sleep 30
+done
+
